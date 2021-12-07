@@ -86,11 +86,25 @@ let sections = [
     name: 'Chapters ',
     content: 'src/components/chapters/_readme.md',
     components: () => {
-      const componentNames = ['Chapter', 'Chapters'];
+      const componentNames = ['Chapter'];
       return componentNames.map((componentName) => {
         return path.resolve(
           __dirname,
           `src/components/chapters`,
+          `${componentName}.js`
+        );
+      });
+    },
+  },
+  {
+    name: 'ChaptersTest',
+    content: 'src/components/chapterTest/_readme.md',
+    components: () => {
+      const componentNames = ['ChapterTest'];
+      return componentNames.map((componentName) => {
+        return path.resolve(
+          __dirname,
+          `src/components/chapterTest`,
           `${componentName}.js`
         );
       });
