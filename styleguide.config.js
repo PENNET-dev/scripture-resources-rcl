@@ -86,7 +86,7 @@ let sections = [
     name: 'Chapters ',
     content: 'src/components/chapters/_readme.md',
     components: () => {
-      const componentNames = ['Chapter'];
+      const componentNames = ['Chapter', 'Chapters'];
       return componentNames.map((componentName) => {
         return path.resolve(
           __dirname,
