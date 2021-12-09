@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const ChapterTest = () => {
+export const InterlinearChapter = () => {
   return (
     <div>
       <p>coucou</p>
@@ -9,4 +9,4 @@ export const ChapterTest = () => {
 };
 
 
-export default ChapterTest;
+export default InterlinearChapter;

@@ -97,14 +97,14 @@ let sections = [
     },
   },
   {
-    name: 'ChaptersTest',
-    content: 'src/components/chapterTest/_readme.md',
+    name: 'InterlinearChapter',
+    content: 'src/components/interlinearChapter/_readme.md',
     components: () => {
-      const componentNames = ['ChapterTest'];
+      const componentNames = ['InterlinearChapter'];
       return componentNames.map((componentName) => {
         return path.resolve(
           __dirname,
-          `src/components/chapterTest`,
+          `src/components/InterlinearChapter`,
           `${componentName}.js`
         );
       });
