@@ -97,6 +97,20 @@ let sections = [
     },
   },
   {
+    name: 'InterlinearChapter',
+    content: 'src/components/interlinearChapter/_readme.md',
+    components: () => {
+      const componentNames = ['InterlinearChapter'];
+      return componentNames.map((componentName) => {
+        return path.resolve(
+          __dirname,
+          `src/components/InterlinearChapter`,
+          `${componentName}.js`
+        );
+      });
+    },
+  },
+  {
     name: 'Verses ',
     content: 'src/components/verses/_readme.md',
     components: () => {
