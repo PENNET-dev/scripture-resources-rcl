@@ -89,7 +89,6 @@ function VerseObject({
 
 VerseObject.propTypes = {
   verseObject: PropTypes.shape({
-    tag: PropTypes.string,
     type: PropTypes.oneOf([
       'text',
       'quote',
@@ -99,13 +98,8 @@ VerseObject.propTypes = {
       'paragraph',
       'footnote',
     ]),
-    content: PropTypes.string,
     children: PropTypes.arrayOf(PropTypes.object),
     strong: PropTypes.string,
-    lemma: PropTypes.string,
-    morph: PropTypes.string,
-    occurrence: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-    occurrences: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   }).isRequired,
   originalWords: PropTypes.array,
   /** render verses paragraphs, use explicit paragraphs */
