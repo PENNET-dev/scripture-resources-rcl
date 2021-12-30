@@ -90,7 +90,15 @@ function VerseObject({
 VerseObject.propTypes = {
   verseObject: PropTypes.shape({
     tag: PropTypes.string,
-    type: PropTypes.string,
+    type: PropTypes.oneOf([
+      'text',
+      'quote',
+      'milestone',
+      'word',
+      'section',
+      'paragraph',
+      'footnote',
+    ]),
     content: PropTypes.string,
     children: PropTypes.arrayOf(PropTypes.object),
     strong: PropTypes.string,
